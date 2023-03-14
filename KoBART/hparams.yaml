@@ -1,0 +1,63 @@
+accelerator: null
+accumulate_grad_batches: 1
+amp_backend: native
+amp_level: O2
+auto_lr_find: false
+auto_scale_batch_size: false
+auto_select_gpus: false
+automatic_optimization: null
+batch_size:   # setting.py의 chatbot_args에 기재되어 있음
+benchmark: false
+check_val_every_n_epoch: 1
+checkpoint_callback: true
+checkpoint_path: null
+default_root_dir: logs
+deterministic: false
+distributed_backend: null
+enable_pl_optimizer: null
+fast_dev_run: false
+flush_logs_every_n_steps: 100
+gpus: 1          # gpu사용할 것이면 1 이상으로 변경해야 함... 지금 애플 M1이라 0으로 해뒀음
+gradient_clip_val: 1.0
+limit_predict_batches: 1.0
+limit_test_batches: 1.0
+limit_train_batches: 1.0
+limit_val_batches: 1.0
+log_every_n_steps: 50
+log_gpu_memory: null
+logger: True
+lr:            # setting.py의 chatbot_args에 기재되어 있음
+max_epochs:    # setting.py의 chatbot_args에 기재되어 있음
+max_seq_len:   # setting.py의 chatbot_args에 기재되어 있음
+max_steps: null
+min_epochs: null
+min_steps: null
+model_path: kobart_from_pretrained
+move_metrics_to_cpu: false
+multiple_trainloader_mode: max_size_cycle
+num_nodes: 1
+num_processes: 1
+num_sanity_val_steps: 2
+num_workers: 5
+overfit_batches: 0.0
+plugins: null
+precision: 32
+prepare_data_per_node: true
+process_position: 0
+profiler: null
+progress_bar_refresh_rate: null
+reload_dataloaders_every_epoch: false
+replace_sampler_ddp: true
+resume_from_checkpoint: null
+stochastic_weight_avg: false
+sync_batchnorm: false
+terminate_on_nan: false
+test_file:   # setting.py의 chatbot_args에 기재되어 있음
+tokenizer_path: emji_tokenizer
+track_grad_norm: -1
+train_file:  # setting.py의 chatbot_args에 기재되어 있음
+truncated_bptt_steps: null
+val_check_interval: 1.0
+warmup_ratio: 0.1
+weights_save_path: null
+weights_summary: top
